@@ -15,7 +15,6 @@ def create_app() -> FastAPI:
         lifespan=lifespan
     )
 
-
     # 配置 CORS 中间件
     _app.add_middleware(
         CORSMiddleware,
